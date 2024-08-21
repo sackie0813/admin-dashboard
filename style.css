@@ -1,0 +1,114 @@
+:root {
+    font-size: 24px;
+}
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    padding: 0;
+}
+
+img {
+    height:5vh;
+    width:5vw
+}
+
+button {
+    padding:5px;
+    border-radius: 15px;
+}
+
+
+.container {
+    display:grid;
+    width:100vw;
+    height:100vh;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+/* ################ TEMPORARY CODE START, ADDS BORDER LINES #################### */
+.container > div {
+    border: 1px solid black;
+}
+
+.user-items > div, .maintenance-items > div , .logo  {
+    padding:6% 2%;
+}
+
+/* ############### TEMPORARY CODE END ##############3 */
+
+/* #######################  SIDEBAR ################################# */
+.sidebar , .header, .content {
+    display:grid;
+}
+
+.sidebar {
+    grid-template-rows: 1fr 3fr 4fr;
+    padding: 3%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    
+}
+/* ########################## SIDEBAR ##############################*/
+
+/* ########################## HEADER ########################*/
+.header {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display:flex;
+    flex-direction: column;
+}
+
+.header-upper {
+    padding: 15px;
+    display:flex;
+    align-items: center;
+}
+
+.header-lower {
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.header-lower-content {
+    display:flex;
+    flex-direction: row;
+}
+
+.header-text {
+    display:flex;
+    flex-direction: column;
+}
+
+#magnifying-glass, #bell {
+    height:3vh;
+    width:3vw;
+}
+
+#mini-pfp {
+    height:5vh;
+    width:5vw;
+}
+
+#hi-there {
+    font-size:0.6em;
+}
+
+#name {
+    font-size:1.3em;
+}
+
+/* ########################## HEADER #####################*/
+
+
+.content {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
