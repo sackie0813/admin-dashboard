@@ -67,6 +67,7 @@ button {
     padding: 15px;
     display:flex;
     align-items: center;
+
 }
 
 .header-lower {
@@ -106,9 +107,77 @@ button {
 
 /* ########################## HEADER #####################*/
 
-
+/* ######################### CONTENT ##################### */
 .content {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display:grid;
+    grid-template-rows: 2fr 2fr;
+    grid-template-columns: 3fr 1fr;
 }
+
+.card-container {
+    display:grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    border: solid black 1px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat (3, 1fr);
+    margin: 3vh 2vw;
+}
+
+.card1 {
+    border: solid black 1px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.card2 {
+    border:solid black 1px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.card3 {
+    border: solid black 1px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.card4 {
+    border: solid black 1px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.card5 {
+    border: solid black 1px;
+    grid-column:1/2;
+    grid-row: 3/4;
+}
+
+.card6 {
+    border: solid black 1px;
+    grid-column: 2/3;
+    grid-row:3/4;
+}
+
+.announcements-container {
+    grid-column: 2 / 3;
+    grid-row: 1/ 2;
+    border: solid black 1px;
+    margin: 3vh 2vw;
+}
+
+.trending-container {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    border: solid black 1px;
+    margin: 3vh 2vw;
+}
+
+
+
+
+
+/* ################################ CONTENT ########################### */
