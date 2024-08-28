@@ -22,6 +22,10 @@ button {
     border-radius: 15px;
 }
 
+label {
+    font-size: 0.75em;
+}
+
 
 .container {
     display:grid;
@@ -167,6 +171,14 @@ button {
     grid-row: 1/ 2;
     border: solid black 1px;
     margin: 3vh 2vw;
+    display:grid;
+    grid-template-rows: 1fr 8fr;
+}
+
+.announcements-cards {
+    grid-row:2/9;
+    display:grid;
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .trending-container {
@@ -174,6 +186,17 @@ button {
     grid-column: 2 / 3;
     border: solid black 1px;
     margin: 3vh 2vw;
+    display:grid;
+    grid-template-rows: 1fr 8fr;
+}
+
+.trending-cards {
+    display:grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.announcement, .trending {
+    border:1px solid black;
 }
 
 
