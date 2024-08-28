@@ -70,8 +70,20 @@ label {
 .header-upper {
     padding: 15px;
     display:flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr)
+}
 
+.header-upper-left {
+    display:flex;
+    align-items: center;
+}
+
+.header-upper-right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    grid-column: 2/3;
 }
 
 .header-lower {
@@ -125,42 +137,47 @@ label {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     border: solid black 1px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat (3, 1fr);
     margin: 3vh 2vw;
+    grid-template-rows: 0.65fr 12fr;
 }
 
-.card1 {
+.cards {
+    display:grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat (3, 1fr);
+}
+
+.c1 {
     border: solid black 1px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 }
 
-.card2 {
+.c2 {
     border:solid black 1px;
     grid-column: 2/3;
     grid-row: 1/2;
 }
 
-.card3 {
+.c3 {
     border: solid black 1px;
     grid-column: 1/2;
     grid-row: 2/3;
 }
 
-.card4 {
+.c4 {
     border: solid black 1px;
     grid-column: 2/3;
     grid-row: 2/3;
 }
 
-.card5 {
+.c5 {
     border: solid black 1px;
     grid-column:1/2;
     grid-row: 3/4;
 }
 
-.card6 {
+.c6 {
     border: solid black 1px;
     grid-column: 2/3;
     grid-row:3/4;
